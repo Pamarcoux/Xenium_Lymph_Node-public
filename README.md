@@ -98,11 +98,6 @@ clustering steps.
 Cell types are not assigned automatically. Labels have to come from a marker
 heatmap or an external annotation before any phenotype analysis.
 
-## Not included
-
-The notebooks 05 to 15 (niche definition, differential expression, ligand-receptor
-analysis, figures), their builder scripts, the gene set files and all data are
-kept private.
 
 ## Citations
 
@@ -112,18 +107,8 @@ Segmentation:
 > for analyses of image-based spatial omics. *Nature Communications* 15, 4981
 > (2024). doi:10.1038/s41467-024-48981-z
 
-Study this analysis belongs to:
-
-> Marcoux P., Gava F., Tosolini M., et al. Patient-derived lymphoma spheroids
-> reveal predictive markers of glofitamab resistance in relapsed/refractory
-> B-NHL. *Blood* 147(23), 2770 (2026). doi:10.1182/blood.2025031309
-
 ## License
 
 MIT, see `LICENSE`. It covers the code only. No data is distributed.
 `config/sopa_proseg.yaml` is copied from the sopa project and keeps its MIT
 license and attribution.
-
-## Contact
-
-Paul Marcoux, Inserm / CRCT, Toulouse, `paul.marcoux@inserm.fr`
