@@ -1,0 +1,23 @@
+# SpatialData zarr written by the sopa workflow (proseg, 10X Genomics prior).
+input:
+  proseg_zarr: data/10X/Lymph_Node/Xenium_Prime_Human_Lymph_Node_Reactive_FFPE_outs/proseg-output-v2.zarr
+
+output:
+  h5ad: data/10X/Lymph_Node/Lymph_node_10X_proseg.h5ad
+
+qc:
+  min_counts: 20
+  # Random subsample for a quick run. null keeps every cell (~700k, ~20 GB RAM).
+  max_cells: null
+
+clustering:
+  n_top_genes: 2000
+  n_pcs: 30
+  n_neighbors: 15
+  # Resolutions used in the analysis of this section.
+  resolutions: [0.5, 1.0, 1.2, 1.4, 2.0]
+  key_prefix: leiden
+
+# Used by the spatial analysis notebooks, not by the processing notebook.
+spatial:
+  neighbour_radius_px: 30

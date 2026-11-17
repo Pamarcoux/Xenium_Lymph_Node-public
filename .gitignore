@@ -1,0 +1,25 @@
+# Data and large outputs
+data/*
+!data/.gitkeep
+figures/
+Json_MIGSIG/
+*.h5ad
+*.h5seurat
+*.zarr/
+*.zarr.zip
+*.png
+*.pdf
+
+# Environments and caches
+.venv/
+__pycache__/
+*.py[codz]
+.ipynb_checkpoints/
+.ruff_cache/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+.Rhistory
+*.log
